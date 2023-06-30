@@ -1,0 +1,17 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #4570B7;
+}
+label {
+    display: flex;
+}
+input{
+    font-size: 13px;
+}
+span{
+    display: flex;
+    justify-content: flex-start;
+    color: red;
+    padding-top: 3px;
+    font-size: 12px;
+}
