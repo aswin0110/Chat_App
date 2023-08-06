@@ -9,20 +9,33 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { SidemenuuserComponent } from './chathome/sidemenuuser/sidemenuuser.component';
+import { ChathouseComponent } from './chathome/chathouse/chathouse.component';
+import { UserprofileComponent } from './chathome/userprofile/userprofile.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon'; 
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    SidemenuuserComponent
+    SidemenuuserComponent,
+    ChathouseComponent,
+    UserprofileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSnackBarModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -24,7 +24,24 @@ const UserDBSchema = new Schema ({
     repassword:{
         type:String,
         require:true
-    }
+    },
+    friends: [{
+        username: {
+          type: String,
+          required: true
+        },
+        email: {
+          type: String,
+          required: true
+        },
+
+      }],
+    blockedUsers:{
+      type : Array
+    },
+    mutedUsers:{
+      type : Array
+  }
 })
 
 UserDBSchema.pre('save',async  function (next){

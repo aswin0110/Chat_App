@@ -34,8 +34,12 @@ loginform(){
   this.api.loginaccount(this.login.value).subscribe(res=>{
 
     this.loginstatus = res
+    console.log(res);
+    
     if(this.loginstatus.status=='1'){
       alert('Login Success')
+      localStorage.setItem('token', this.loginstatus.token)
+      localStorage.setItem('username', this.loginstatus.username.username)
       this.router.navigateByUrl('chat')
 
     }

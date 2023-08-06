@@ -15,4 +15,7 @@ export class UserloginService {
     return this.http.post(`${this.apiurl}/login`,data)
 
   }
+  getToken(){
+    return localStorage.getItem('token')
+  }
 }
